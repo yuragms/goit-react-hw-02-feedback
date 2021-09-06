@@ -1,15 +1,10 @@
 import React, { Component } from "react";
+import FeedBack from "./feedback/FeedBack.jsx";
 import "./App.css";
 
 class App extends Component {
   render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <h1>Hello world</h1>
-        </header>
-      </div>
-    );
+    return <FeedBack />;
   }
 }
 
