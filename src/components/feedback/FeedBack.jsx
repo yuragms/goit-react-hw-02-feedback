@@ -1,8 +1,13 @@
-// import { Title } from "./FeedBack.styled.jsx";
+import { ButtonFeedback } from "./FeedBack.styled.jsx";
 
-const FeedbackOptions = ({ options }) => {
+const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return Object.keys(options).map((option) => {
-    return <button>{option}</button>;
+    return (
+      <ButtonFeedback key={option} onClick={() => onLeaveFeedback(option)}>
+        {" "}
+        {option}
+      </ButtonFeedback>
+    );
   });
 };
 
