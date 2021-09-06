@@ -1,7 +1,20 @@
-import { Title } from "./FeedBack.styled.jsx";
+// import { Title } from "./FeedBack.styled.jsx";
 
-function FeedBack() {
-  return <Title>Please leave feedback</Title>;
-}
+// function FeedbackOptions({options}) {
+//   return (
+//   // <Title>Please leave feedback</Title>
+//   Object.keys(options).map(option => {
+//     return (
+//          <button>{option}</button>
 
-export default FeedBack;
+//   )}
+
+// );}
+
+const FeedbackOptions = ({ options }) => {
+  return Object.keys(options).map((option) => {
+    return <button>{option}</button>;
+  });
+};
+
+export default FeedbackOptions;
