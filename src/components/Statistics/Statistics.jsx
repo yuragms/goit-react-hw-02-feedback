@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { Stats } from "./Statistics.styled.jsx";
 
 const Statistics = ({
@@ -16,6 +17,14 @@ const Statistics = ({
       <Stats>Positive Feedback: {countPositiveFeedbackPercentage}%</Stats>
     </>
   );
+};
+
+Statistics.propTypes = {
+  good: PropTypes.number,
+  neutral: PropTypes.number,
+  bad: PropTypes.number,
+  total: PropTypes.number,
+  countPositiveFeedbackPercentage: PropTypes.number,
 };
 
 export default Statistics;

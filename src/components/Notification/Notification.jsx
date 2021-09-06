@@ -1,12 +1,12 @@
-// import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 import { Message } from "./Notification.styled.jsx";
 
 function Notification({ message }) {
   return <Message>{message}</Message>;
 }
 
-// Notification.propTypes = {
-//   message: PropTypes.string,
-// };
+Notification.propTypes = {
+  message: PropTypes.string,
+};
 
 export { Notification };

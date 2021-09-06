@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { ButtonFeedback } from "./FeedBack.styled.jsx";
 
 const FeedbackOptions = ({ options, onLeaveFeedback }) => {
@@ -9,6 +10,11 @@ const FeedbackOptions = ({ options, onLeaveFeedback }) => {
       </ButtonFeedback>
     );
   });
+};
+
+FeedbackOptions.propTypes = {
+  options: PropTypes.arrayOf(PropTypes.string),
+  onLeaveFeedback: PropTypes.func,
 };
 
 export default FeedbackOptions;
